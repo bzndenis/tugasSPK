@@ -39,9 +39,7 @@
 </head>
 
 <body>
-    <h2 class="center">Hasil Penilaian Kinerja Karyawan</h2>
-    <h2 class="center">Balai Besar Pelatihan Vokasi dan Produktivitas (BBPVP) Serang</h2>
-    <h3 class="center">Priode 2021-2022</h3>
+    <h2 class="center">Hasil Penilaian</h2>
     <table>
         <thead>
             <tr>

@@ -3,9 +3,9 @@
 <div class="box box-info">
     <div class="box-header with-border">
         <h3 class="box-title">Hasil Penilaian</h3>
-        <div class="box-tools">
+        <!-- <div class="box-tools">
             <a href="<?php echo site_url('penilaian/pdf'); ?>" class="btn btn-primary" target="_blank"><img src="<?php echo base_url('assets/images/pdf.png'); ?>">&nbsp; Export ke PDF</a>
-        </div>
+        </div> -->
     </div>
     <div class="box-body">
         <div class="table-responsive">
