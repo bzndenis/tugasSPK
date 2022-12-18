@@ -1,4 +1,7 @@
 <li <?php echo ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'home') ? 'class="active"' : ''; ?>><a href="<?php echo site_url(); ?>"><i class="fa fa-home"></i> <span>Home</span></a></li>
+<li <?php echo ($this->uri->segment(1) == 'kriteria' || $this->uri->segment(1) == 'subkriteria') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('kriteria'); ?>"><i class="fa fa-bar-chart"></i> <span>Kriteria</span></a></li>
+<li <?php echo $this->uri->segment(1) == 'alternatif' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('alternatif'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
+                            
 <li class="treeview">
                             <a>
                                 <i class="fa fa-gear"></i> <span>Metode WP</span>
@@ -9,8 +12,6 @@
                             <ul class="treeview-menu menu-open" style="display: none;">
 
                             
-                            <li <?php echo ($this->uri->segment(1) == 'kriteria' || $this->uri->segment(1) == 'subkriteria') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('kriteria'); ?>"><i class="fa fa-bar-chart"></i> <span>Kriteria</span></a></li>
-                            <li <?php echo $this->uri->segment(1) == 'alternatif' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('alternatif'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
                             <li <?php echo $this->uri->segment(1) == 'penilaian' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('penilaian'); ?>"><i class="fa fa fa-clipboard"></i> <span>Penilaian</span></a></li>
                             <li <?php echo $this->uri->segment(1) == 'hasil' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('hasil'); ?>"><i class="fa fa-list"></i> <span>Hasil</span></a></li>
 
