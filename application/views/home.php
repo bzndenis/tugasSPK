@@ -1,34 +1,40 @@
 <?php $this->load->view('template/header'); ?>
 
 <div class="box box-info">
-    <div class="box-header with-border">
-        <h3 class="box-title">Selamat Datang</h3> <br><br>
+    <div class="container">
+        
+        <div class="row justify-content-md-center ">
+            <div class="box-header with-border">
+                <div class="col-lg-5"></div>
+                <h3 class="box-title"><b> Selamat Datang </b></h3> <br> 
+                <div class="col-lg-5"></div>
+                <small>
+                    <script type='text/javascript'>
+                        var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                        var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                        var date = new Date();
+                        var day = date.getDate();
+                        var month = date.getMonth();
+                        var thisDay = date.getDay(),
+                            thisDay = myDays[thisDay];
+                        var yy = date.getYear();
+                        var year = (yy < 1000) ? yy + 1900 : yy;
+                        document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+                        //
+                    </script>
+                </small>
 
-        <small>
-            <script type='text/javascript'>
-                var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-                var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
-                var date = new Date();
-                var day = date.getDate();
-                var month = date.getMonth();
-                var thisDay = date.getDay(),
-                    thisDay = myDays[thisDay];
-                var yy = date.getYear();
-                var year = (yy < 1000) ? yy + 1900 : yy;
-                document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
-                //
-            </script>
-        </small>
-
+            </div>
+        </div>
     </div>
     <!-- /.row -->
-    <!-- Main row -->    
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="box box-info">
-                    <div class="box-header"></div>
-                    <!-- Small boxes (Stat box) -->
-                    <div class="container">
+    <!-- Main row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box box-info">
+                <div class="box-header"></div>
+                <!-- Small boxes (Stat box) -->
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-xs-6">
                             <!-- small box -->
