@@ -78,8 +78,8 @@
             </a>
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
-                   <span style="color:white"><b>~|SAW | WP | TOPSIS|~</b></span>
-                    <!-- Sidebar toggle button-->
+                <span style="color:white"><b>~|SAW | WP | TOPSIS|~</b></span>
+                <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
