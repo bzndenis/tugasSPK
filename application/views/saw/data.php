@@ -2,9 +2,9 @@
 
 <div class="box box-info">
   <div class="box-header with-border">
-    <h3 class="box-title">Data Kriteria</h3>
+    <h3 class="box-title">Data Alternatif</h3>
     <div class="box-tools">
-      <a href="<?php echo site_url('saw/create'); ?>" class="btn btn-primary">Tambah Kriteria</a>
+      <a href="<?php echo site_url('saw/create'); ?>" class="btn btn-primary">Tambah Alternatif</a>
     </div>
   </div>
   <div class="box-body">
