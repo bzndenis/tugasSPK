@@ -25,7 +25,7 @@ foreach ($tabel as $tabel_list) {
   <div class="box-header with-border">
     <h3 class="box-title">Penilaian</h3>
     <div class="box-tools">
-      <a href="<?php echo site_url('saw/create'); ?>" class="btn btn-primary">Tambah Kriteria</a>
+      <a href="<?php echo site_url('saw/create'); ?>" class="btn btn-primary">Tambah Alternatif</a>
     </div>
   </div>
   <div class="box-body">
