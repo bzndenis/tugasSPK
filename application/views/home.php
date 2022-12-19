@@ -22,63 +22,69 @@
 
     </div>
     <!-- /.row -->
-    <!-- Main row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="box box-info">
-                <div class="box-header"></div>
-                <!-- Small boxes (Stat box) -->
-                <div class="row">
-                    <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-
-                        <div class="small-box bg-aqua">
-                            <div class="inner">
-                                <p>Metode Simple Additive Weighting (SAW)</p><br>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-list-alt"></i>
-                            </div>
-                            <a href="saw" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
+    <!-- Main row -->    
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-info">
+                    <div class="box-header"></div>
+                    <!-- Small boxes (Stat box) -->
+                    <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-xs-6">
+                        <div class="col-lg-4 col-xs-6">
                             <!-- small box -->
 
-                            <div class="small-box bg-green">
+                            <div class="small-box bg-aqua">
                                 <div class="inner">
-                                    <p>Weighted Product (WP)</p><br>
+                                    <p>Metode Simple Additive Weighting (SAW)</p><br><br>
                                 </div>
                                 <div class="icon">
                                     <i class="fa fa-list-alt"></i>
                                 </div>
-                                <a href="hasil" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
+                                <a href="saw" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-3 col-xs-6">
+                            <div class="col-lg-4 col-xs-6">
                                 <!-- small box -->
 
-                                <div class="small-box bg-red">
+                                <div class="small-box bg-green">
                                     <div class="inner">
-                                        <p>Technique for Order. Preference by Similarity to Ideal Solution (TOPSIS)</p>
+                                        <p>Weighted Product (WP)</p><br><br>
                                     </div>
                                     <div class="icon">
                                         <i class="fa fa-list-alt"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="hasil" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
 
+                            <div class="row">
+                                <div class="col-lg-4 col-xs-6">
+                                    <!-- small box -->
+
+                                    <div class="small-box bg-red">
+                                        <div class="inner">
+                                            <p>Technique for Order. Preference by Similarity to Ideal Solution (TOPSIS)</p><br>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-list-alt"></i>
+                                        </div>
+                                        <a href="#" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!-- <div class="box box-info">
+
+<!-- <div class="box box-info">
                 <div class="box-header with-border">
                     <h3 class="box-title">Selamat Datang</h3>
                     <br>- Pertama input kriteria
@@ -92,6 +98,4 @@
                     <br>- Dihalaman Hasil admin dapat mencetak ke dalam pdf untuk hasil penilaiannya                    
                 </div> -->
 
-            </div>
-
-            <?php $this->load->view('template/footer'); ?>
+<?php $this->load->view('template/footer'); ?>
