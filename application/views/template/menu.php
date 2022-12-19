@@ -2,6 +2,22 @@
 
 <li class="treeview">
     <a>
+        <i class="fa fa-gear"></i> <span>Metode SAW</span>
+        <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu menu-open" style="display: none;">
+
+        <li <?php echo $this->uri->segment(1) == 'saw/data' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw/data'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
+        <li <?php echo $this->uri->segment(1) == 'saw' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw'); ?>"><i class="fa fa fa-clipboard"></i> <span>Penilaian dan Hasil</span></a></li>
+        
+
+    </ul>
+</li>
+
+<li class="treeview">
+    <a>
         <i class="fa fa-gear"></i> <span>Metode WP</span>
         <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
@@ -22,18 +38,20 @@
 
 <li class="treeview">
     <a>
-        <i class="fa fa-gear"></i> <span>Metode SAW</span>
+        <i class="fa fa-gear"></i> <span>Metode TOPSIS</span>
         <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
         </span>
     </a>
     <ul class="treeview-menu menu-open" style="display: none;">
 
-        <li <?php echo $this->uri->segment(1) == 'saw/data' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw/data'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
-        <li <?php echo $this->uri->segment(1) == 'saw' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw'); ?>"><i class="fa fa fa-clipboard"></i> <span>Penilaian dan Hasil</span></a></li>
+        <li <?php echo $this->uri->segment(1) == '#' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('#'); ?>"><i class="fa fa-child"></i> <span>Commingsoon</span></a></li>
+        <li <?php echo $this->uri->segment(1) == '#' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('#'); ?>"><i class="fa fa fa-clipboard"></i> <span>Commingsoon</span></a></li>
         
 
     </ul>
 </li>
+
+
 
 <!-- <li><a href="<?php echo site_url('login/logout'); ?>"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li> -->

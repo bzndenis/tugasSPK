@@ -74,11 +74,11 @@
         <header class="main-header">
             <a href="<?php echo site_url(); ?>" class="logo">
                 <span class="logo-mini"><b>WP</b></span>
-                <span class="logo-lg">SPK <b>Kel 6</b></span>
+                <span class="logo-lg">TUGAS <b>SPK</b></span>
             </a>
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
-                   <span style="color:white"><b>TUGAS SPK</b></span>
+                   <span style="color:white"><b>~|SAW | WP | TOPSIS|~</b></span>
                     <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
