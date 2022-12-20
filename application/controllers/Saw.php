@@ -25,7 +25,7 @@ class Saw extends CI_Controller
         $data['bobot_saw'] = $this->saw_model->get_bobot();
 
         $this->load->view('saw/saw', $data);
-    }
+    }    
 
     public function create()
     {

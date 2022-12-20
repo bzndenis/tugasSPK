@@ -33,17 +33,19 @@ foreach ($bobot_saw as $bobot_list) {
 foreach ($tabel as $tabel_list) {
   $naman[$i] = $tabel_list['nama'];
 
-  $harhar[$i] = $tabel_list['harga'] / $max_harga;
-  $ramram[$i] = $tabel_list['ram'] / $max_ram;
-  $memmem[$i] = $min_memori / $tabel_list['memori'];
-  $propro[$i] = $tabel_list['processor'] / $max_processor;
-  $kamkam[$i] = $min_kamera / $tabel_list['kamera'];
+  //proses normalisasi
+  $tc1[$i] = $tabel_list['harga'] / $max_harga;
+  $tc2[$i] = $tabel_list['ram'] / $max_ram;
+  $tc3[$i] = $min_memori / $tabel_list['memori'];
+  $tc4[$i] = $tabel_list['processor'] / $max_processor;
+  $tc5[$i] = $min_kamera / $tabel_list['kamera'];
 
-  $Whar[$i] = $harhar[$i] * $nb1[$j];
-  $Wram[$i] = $ramram[$i] * $nb2[$j];
-  $Wmem[$i] = $memmem[$i] * $nb3[$j];
-  $Wpro[$i] = $propro[$i] * $nb4[$j];
-  $Wkam[$i] = $kamkam[$i] * $nb5[$j];
+  //proses menghitung bobot prefensi
+  $Whar[$i] = $tc1[$i] * $nb1[$j];
+  $Wram[$i] = $tc2[$i] * $nb2[$j];
+  $Wmem[$i] = $tc3[$i] * $nb3[$j];
+  $Wpro[$i] = $tc4[$i] * $nb4[$j];
+  $Wkam[$i] = $tc5[$i] * $nb5[$j];
 
   $vv[$i] = $Whar[$i] + $Wram[$i] + $Wmem[$i] + $Wpro[$i] + $Wkam[$i];
 
@@ -182,11 +184,11 @@ foreach ($tabel as $tabel_list) {
               <tr>
                 <td><?php echo $j + 1 ?></td>
                 <td><?php echo $tabel_list['nama'] ?></td>
-                <td><?php echo $harhar[$j] ?></td>
-                <td><?php echo $ramram[$j] ?></td>
-                <td><?php echo $memmem[$j] ?></td>
-                <td><?php echo $propro[$j] ?></td>
-                <td><?php echo $kamkam[$j] ?></td>
+                <td><?php echo round($tc1[$j], 4)  ?></td>
+                <td><?php echo round($tc2[$j], 4) ?></td>
+                <td><?php echo round($tc3[$j], 4) ?></td>
+                <td><?php echo round($tc4[$j], 4) ?></td>
+                <td><?php echo round($tc5[$j], 4) ?></td>
               </tr>
 
             <?php $j += 1;
@@ -221,7 +223,7 @@ foreach ($tabel as $tabel_list) {
               <tr>
                 <td><?php echo $j + 1 ?></td>
                 <td><?php echo $tabel_list['nama'] ?></td>
-                <td><?php echo $vv[$j] ?></td>
+                <td><?php echo round($vv[$j], 5) ?></td>
               </tr>
             
             <?php
@@ -259,7 +261,7 @@ foreach ($tabel as $tabel_list) {
       </div>
     </div>
     <div class="box-body">
-      <p>Dari hasil perhitungan ranking diatas, maka penilaian terbaik adalah <b><?php echo $naman[$ind] ?></b> dengan nilai <?php echo $maxam ?> </p>
+      <p>Dari hasil perhitungan ranking diatas, maka penilaian terbaik adalah <b><?php echo $naman[$ind] ?></b> dengan nilai <?php echo round($maxam, 5) ?> </p>
     </div>
   </div>
 </div>
