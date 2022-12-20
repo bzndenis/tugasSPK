@@ -22,6 +22,7 @@ class Saw extends CI_Controller
         $data['max_kamera'] = $this->saw_model->max_kamera();
         $data['min_kamera'] = $this->saw_model->min_kamera();
         $data['tabel'] = $this->saw_model->get_tabell();
+        $data['bobot_saw'] = $this->saw_model->get_bobot();
 
         $this->load->view('saw/saw', $data);
     }
@@ -51,6 +52,7 @@ class Saw extends CI_Controller
     public function data()
     {
         $data['tabel'] = $this->saw_model->get_tabell();
+        $data['bobot'] = $this->saw_model->get_bobot();
 
         // $this->load->view('saw/header');
         $this->load->view('saw/data', $data);
@@ -75,6 +77,27 @@ class Saw extends CI_Controller
             $this->load->view('saw/update', $data);
         } else {
             $this->saw_model->update_data($id);
+            redirect('saw/data');
+        }
+    }
+
+    public function update_bobot()
+    {
+        // $this->load->view('saw/header');
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('C1', 'C1', 'required');
+        $this->form_validation->set_rules('C2', 'C2', 'required');
+        $this->form_validation->set_rules('C3', 'C3', 'required');
+        $this->form_validation->set_rules('C4', 'C4', 'required');
+        $this->form_validation->set_rules('C5', 'C5', 'required');
+
+        if ($this->form_validation->run() === FALSE) {
+            $data['data_bobot'] = $this->saw_model->get_bobot();
+            $this->load->view('saw/update_bobot', $data);
+        } else {
+            $this->saw_model->update_data_bobot();
             redirect('saw/data');
         }
     }

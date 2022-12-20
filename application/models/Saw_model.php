@@ -13,6 +13,12 @@ class Saw_model extends CI_Model
     return $query->result_array();
   }
 
+  public function get_bobot()
+  {
+    $query = $this->db->get('bobot_saw');
+    return $query->result_array();
+  }
+
   public function min_harga()
   {
     $this->db->select_min('harga');
@@ -135,6 +141,20 @@ class Saw_model extends CI_Model
     $this->db->where('id', $id);
     return $this->db->update('data', $data);
   }
+
+  public function update_data_bobot()
+  {
+    $data = array(
+      'C1' => $this->input->post('C1'),
+      'C2' => $this->input->post('C2'),
+      'C3' => $this->input->post('C3'),
+      'C4' => $this->input->post('C4'),
+      'C5' => $this->input->post('C5'),      
+    );
+    
+    return $this->db->update('bobot_saw', $data);
+  }
+
   public function delete_data($id)
   {
     return $this->db->delete('data', array('id' => $id));

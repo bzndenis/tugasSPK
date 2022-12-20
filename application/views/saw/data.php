@@ -44,4 +44,40 @@
   </div>
 </div>
 
+<div class="box box-info">
+  <div class="box-header with-border">
+    <h3 class="box-title">Data Bobot</h3>    
+  </div>
+  <div class="box-body">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered" id="dataTables1">
+        <thead>
+          <tr>
+            <th>C1</th>
+            <th>C2</th>
+            <th>C3</th>
+            <th>C4</th> 
+            <th>C5</th>           
+            <th width="180">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php $j = 0;
+            foreach ($bobot as $bobot_list) { ?> <tr>
+            <td><?php echo $bobot_list['C1'] ?></td>
+            <td><?php echo $bobot_list['C2'] ?></td>
+            <td><?php echo $bobot_list['C3'] ?></td>
+            <td><?php echo $bobot_list['C4'] ?></td>
+            <td><?php echo $bobot_list['C5'] ?></td>
+            <td>
+              <a href="<?php echo site_url('saw/update_bobot/'); ?>" class="btn btn-success btn-xs" title="Ubah">Ubah</a> &nbsp;
+            </td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 <?php $this->load->view('template/footer'); ?>
