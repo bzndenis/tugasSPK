@@ -92,6 +92,71 @@ foreach ($tabel as $tabel_list) {
 
   <div class="box box-info">
     <div class="box-header with-border">
+      <h3 class="box-title">Bobot</h3>
+      <div class="box-tools">
+      </div>
+    </div>
+    <div class="box-body">
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered" id="dataTables3">
+          <thead>
+            <tr>
+              <th>C1</th>
+              <th>C2</th>
+              <th>C3</th>
+              <th>C4</th>
+              <th>C5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php $j = 0;
+            foreach ($bobot_saw as $bobot_output) { ?>
+
+              <tr>                
+                <td><?php echo $bobot_output['C1'] ?></td>
+                <td><?php echo $bobot_output['C2'] ?></td>
+                <td><?php echo $bobot_output['C3'] ?></td>
+                <td><?php echo $bobot_output['C4'] ?></td>
+                <td><?php echo $bobot_output['C5'] ?></td>
+              </tr>
+
+            <?php $j += 1;
+            } ?>
+          </tbody>
+        </table>
+            <h3 class="box-title">Normalisasi Bobot</h3>
+            <table class="table table-striped table-bordered" id="dataTables3">
+          <thead>
+            <tr>
+              <th>C1</th>
+              <th>C2</th>
+              <th>C3</th>
+              <th>C4</th>
+              <th>C5</th>              
+            </tr>
+          </thead>
+          <tbody>
+            <?php $j = 0;
+            foreach ($bobot_saw as $bobot_output) { ?>
+              <tr>                
+                <td><?php echo $nb1[$j]?></td>
+                <td><?php echo $nb2[$j]?></td>
+                <td><?php echo $nb3[$j]?></td>
+                <td><?php echo $nb4[$j]?></td>
+                <td><?php echo $nb5[$j]?></td>
+              </tr>
+
+            <?php $j += 1;
+            } ?>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="box box-info">
+    <div class="box-header with-border">
       <h3 class="box-title">Tabel Normalisasi</h3>
       <div class="box-tools">
       </div>
