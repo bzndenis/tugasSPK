@@ -163,7 +163,7 @@ foreach ($tabel as $tabel_list) {
     </div>
     <div class="box-body">
       <div class="table-responsive">
-        <table class="table table-striped table-bordered" id="dataTables3">
+        <table class="table table-striped table-bordered" id="dataTexampleables3">
           <thead>
             <tr>
               <th>No</th>
@@ -195,17 +195,7 @@ foreach ($tabel as $tabel_list) {
         </table>
       </div>
     </div>
-  </div>
-
-  <script>
-    $(document).ready(function() {
-      $('#example').DataTable({
-        order: [
-          [3, 'desc']
-        ],
-      });
-    });
-  </script>
+  </div>  
 
   <div class="box box-info">
     <div class="box-header with-border">
@@ -224,13 +214,24 @@ foreach ($tabel as $tabel_list) {
             </tr>
           </thead>
           <tbody>
-            <?php $j = 0;
-            foreach ($tabel as $tabel_list) { ?>
+            <?php 
+            $j = 0;
+
+              foreach ($tabel as $tabel_list) { ?>
               <tr>
                 <td><?php echo $j + 1 ?></td>
                 <td><?php echo $tabel_list['nama'] ?></td>
                 <td><?php echo $vv[$j] ?></td>
               </tr>
+            
+            <?php
+            
+            $data = array(
+            'id' => $j + 2,
+            'nilai' => $vv[$j],
+            );
+            $this->db->insert('hasil_saw', $data);
+            ?>
 
             <?php $j += 1;
             } ?>

@@ -149,14 +149,22 @@ class Saw_model extends CI_Model
       'C2' => $this->input->post('C2'),
       'C3' => $this->input->post('C3'),
       'C4' => $this->input->post('C4'),
-      'C5' => $this->input->post('C5'),      
+      'C5' => $this->input->post('C5'),
     );
-    
+
     return $this->db->update('bobot_saw', $data);
   }
 
   public function delete_data($id)
   {
     return $this->db->delete('data', array('id' => $id));
+  }
+
+  public function get_all()
+  {
+    $this->db->order_by('nilai', 'desc');
+    $this->db->limit(7);
+    $this->db->join('data', 'data.id=hasil_saw.id', 'right');
+    return $this->db->get('hasil_saw');
   }
 }

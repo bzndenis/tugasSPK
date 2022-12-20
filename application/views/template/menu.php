@@ -11,7 +11,7 @@
 
         <li <?php echo $this->uri->segment(1) == 'saw/data' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw/data'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
         <li <?php echo $this->uri->segment(1) == 'saw' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw'); ?>"><i class="fa fa fa-clipboard"></i> <span>Penilaian dan Hasil</span></a></li>
-        
+        <!-- <li <?php echo $this->uri->segment(1) == 'saw/saw_hasil' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('saw/saw_hasil'); ?>"><i class="fa fa fa-clipboard"></i> <span>Hasil</span></a></li> -->
 
     </ul>
 </li>

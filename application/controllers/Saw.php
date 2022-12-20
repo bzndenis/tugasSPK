@@ -59,6 +59,16 @@ class Saw extends CI_Controller
         // $this->load->view('saw/footer');
     }
 
+    public function saw_hasil()
+    {
+        $data['tabel'] = $this->saw_model->get_tabell();
+        $data['bobot'] = $this->saw_model->get_bobot();
+        $data['hasil_saw'] = $this->saw_model->get_all()->result();
+
+        $this->load->view('saw/saw_hasil', $data);
+
+    }
+    
     public function update($id)
     {
         // $this->load->view('saw/header');
@@ -107,4 +117,7 @@ class Saw extends CI_Controller
         $this->saw_model->delete_data($id);
         redirect('saw/data');
     }
+
+    
+    
 }
