@@ -54,10 +54,6 @@ foreach ($tabel as $tabel_list) {
 <div class="box box-info">
   <div class="box-header with-border">
     <h3 class="box-title">Penilaian</h3> 
-    <?php $i = 0;
-
-    echo $nb1[$i]
-    ?>
     <div class="box-tools">
       <a href="<?php echo site_url('saw/create'); ?>" class="btn btn-primary">Tambah Alternatif</a>
     </div>
