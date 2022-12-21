@@ -28,14 +28,14 @@ class Login extends CI_Controller
             redirect('home');
         } else {
             $this->session->set_flashdata('pesan', '<div class="alert bg-danger text-center" role="alert">Username dan Password salah</div>');
-            redirect('login');
+            redirect('Auth/utama');
         }
     }
 
     public function logout()
     {
         $this->session->sess_destroy();
-        redirect('login');
+        redirect('Auth/utama');
     }
 }
 

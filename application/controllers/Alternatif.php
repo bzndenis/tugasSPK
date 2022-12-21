@@ -8,7 +8,7 @@ class Alternatif extends CI_Controller
     {
         parent::__construct();
         if ($this->session->userdata('logged_in') !== TRUE) {
-            redirect('login');
+            redirect('Auth/utama');
         }
         $this->load->helper('form');
         $this->load->library('form_validation');

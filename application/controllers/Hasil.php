@@ -9,7 +9,7 @@ class Hasil extends CI_Controller
     {
         parent::__construct();
         if ($this->session->userdata('logged_in') !== TRUE) {
-            redirect('login');
+            redirect('Auth/utama');
         }
         $this->load->model('hasil_model');
     }
