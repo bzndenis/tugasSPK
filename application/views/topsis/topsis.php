@@ -388,7 +388,7 @@ $jml_kriteria = count($kriteria);
       </div>
     </div>
     <div class="box-body">
-      <p>Dari hasil perhitungan ranking diatas, maka penilaian terbaik adalah Jalan <b><?php echo $nama[$ind] ?></b> dengan nilai <?php echo round($maxam, 5) ?> </p>
+      <p>Dari hasil perhitungan ranking diatas, maka penilaian terbaik adalah Jalan <b><?php echo $nama[$ind] ?></b> dengan nilai <b><?php echo round($maxam, 5) ?></b> </p>
     </div>
   </div>
 </div>

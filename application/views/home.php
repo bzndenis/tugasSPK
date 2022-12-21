@@ -76,7 +76,7 @@
                                         <div class="icon">
                                             <i class="fa fa-list-alt"></i>
                                         </div>
-                                        <a href="#" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
+                                        <a href="topsis" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
                                     </div>
                                 </div>
 
