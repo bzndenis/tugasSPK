@@ -19,6 +19,23 @@ $sql = "
         ";
 $result = $db->query($sql);
 
+// $dbhost = 'localhost';
+// $dbuser = 'dundang1_wp_kinerja';
+// $dbpass = 'q1w2e3qwe123';
+// $dbname = 'dundang1_wp_kinerja';
+// $db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+// $sql = "
+//         SELECT 
+//           b.name,c.criteria,a.value,c.weight,c.attribute
+//         FROM 
+//           topsis_evaluations a
+//           JOIN 
+//             topsis_alternatives b USING(id_alternative)
+//           JOIN 
+//             topsis_criterias c USING(id_criteria)
+//         ";
+// $result = $db->query($sql);
+
 
 $data = array();
 $kriterias = array();
