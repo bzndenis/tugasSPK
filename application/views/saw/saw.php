@@ -228,11 +228,11 @@ foreach ($tabel as $tabel_list) {
             
             <?php
             
-            $data = array(
-            'id' => $j + 2,
-            'nilai' => $vv[$j],
-            );
-            $this->db->insert('hasil_saw', $data);
+            // $data = array(
+            // 'id' => $j + 2,
+            // 'nilai' => $vv[$j],
+            // );
+            // $this->db->insert('hasil_saw', $data);
             ?>
 
             <?php $j += 1;
