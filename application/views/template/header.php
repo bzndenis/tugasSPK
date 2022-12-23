@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/AdminLTE.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/skins/_all-skins.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/custom.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
 
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url('assets/js/jQuery-2.1.4.min.js'); ?>"></script>

@@ -1,0 +1,36 @@
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.small-box{
+     border-radius: 8px;
+     height: 10%;
+
+}
+
+.small-box p{
+     font-size: 18px;
+}
+
+.small-box .small-box-footer{
+     margin-top: 12px;
+     border-radius: 0 0 8px 8px;
+     font-size: 18px;
+
+}
+
+.box-header .container .header{
+     text-align: center;
+     margin-bottom: 2%;
+
+}
+
+.box-header .box-title {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0;
+  line-height: 1;
+  font-weight: bold;
+}
+

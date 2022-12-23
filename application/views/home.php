@@ -36,7 +36,7 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-xs-6">
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
                             <!-- small box -->
 
                             <div class="small-box bg-aqua">
@@ -46,12 +46,13 @@
                                 <div class="icon">
                                     <i class="fa fa-list-alt"></i>
                                 </div>
+                                <br>
                                 <a href="saw" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-4 col-xs-6">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <!-- small box -->
 
                                 <div class="small-box bg-green">
@@ -61,12 +62,13 @@
                                     <div class="icon">
                                         <i class="fa fa-list-alt"></i>
                                     </div>
+                                    <br>
                                     <a href="hasil" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-4 col-xs-6">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
                                     <!-- small box -->
 
                                     <div class="small-box bg-red">
@@ -76,8 +78,9 @@
                                         <div class="icon">
                                             <i class="fa fa-list-alt"></i>
                                         </div>
+                                        <br>
                                         <a href="topsis" class="small-box-footer">Penilaian <i class="fa fa-arrow-circle-right"></i></a>
-                                    </div>
+                                   </div>
                                 </div>
 
                             </div>
@@ -93,11 +96,14 @@
 
 <div class="box box-info">
     <div class="box-header with-border">
-        <h3 class="box-title">Kelompok</h3>
-    <!-- Small boxes (Stat box) -->
-    <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-xs-6">
+         <!-- Small boxes (Stat box) -->
+         <div class="container">
+          <div class="row header">
+
+               <h3 class="box-title">Kelompok</h3>
+          </div>
+              <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <!-- small box -->
 
                             <div class="small-box bg-blue">
@@ -107,12 +113,13 @@
                                 <div class="icon">
                                     <i class="fa fa-male"></i>
                                 </div>
+                                <br>
                                 <a href="#" class="small-box-footer">NPM (<b>201206040793</b>)</a>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-4 col-xs-6">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <!-- small box -->
 
                                 <div class="small-box bg-blue">
@@ -122,12 +129,13 @@
                                 <div class="icon">
                                     <i class="fa fa-female"></i>
                                 </div>
+                                <br>
                                 <a href="#" class="small-box-footer">NPM (<b>191106041508</b>)</a>
                             </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-4 col-xs-6">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
                                     <!-- small box -->
 
                                     <div class="small-box bg-blue">
@@ -137,6 +145,7 @@
                                 <div class="icon">
                                     <i class="fa fa-male"></i>
                                 </div>
+                                <br>
                                 <a href="#" class="small-box-footer">NPM (<b>191106041409</b>)</a>
                             </div>
                                 </div>
@@ -145,7 +154,9 @@
                         </div>
                     </div>
                 </div>
-        
+
+
+
     <!-- <br>- Pertama input kriteria
                     <br>- Lalu masukkan kode kriteria, bobot dan tipe kriteria ada 2 pilihan yaitu cost/benefit
                     <br>- Tambahkan data subkriteria
