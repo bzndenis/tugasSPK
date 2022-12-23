@@ -25,7 +25,7 @@
     </a>
     <ul class="treeview-menu menu-open" style="display: none;">
 
-        <li <?php echo ($this->uri->segment(1) == 'kriteria' || $this->uri->segment(1) == 'subkriteria') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('kriteria'); ?>"><i class="fa fa-bar-chart"></i> <span>Kriteria</span></a></li>
+        <!-- <li <?php echo ($this->uri->segment(1) == 'kriteria' || $this->uri->segment(1) == 'subkriteria') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('kriteria'); ?>"><i class="fa fa-bar-chart"></i> <span>Kriteria</span></a></li> -->
         <li <?php echo $this->uri->segment(1) == 'alternatif' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('alternatif'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
         <li <?php echo $this->uri->segment(1) == 'penilaian' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('penilaian'); ?>"><i class="fa fa fa-clipboard"></i> <span>Penilaian</span></a></li>
         <li <?php echo $this->uri->segment(1) == 'hasil' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('hasil'); ?>"><i class="fa fa-list"></i> <span>Hasil</span></a></li>
@@ -45,8 +45,8 @@
     </a>
     <ul class="treeview-menu menu-open" style="display: none;">
 
-        <li <?php echo $this->uri->segment(1) == 'topsis' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('topsis'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
-        <li <?php echo $this->uri->segment(1) == 'topsis' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('topsis'); ?>"><i class="fa fa fa-clipboard"></i> <span>Hasil</span></a></li>
+        <li <?php echo $this->uri->segment(1) == '#' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('#'); ?>"><i class="fa fa-child"></i> <span>Alternatif</span></a></li>
+        <li <?php echo $this->uri->segment(1) == 'topsis' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('topsis'); ?>"><i class="fa fa fa-clipboard"></i> <span>Hasil dan Penilaian</span></a></li>
         
 
     </ul>

@@ -387,29 +387,29 @@ $jml_kriteria = count($kriteria);
           </div>
 
           <?php
-  $jumlah = count($V);
-  $maxam = $V[0];
-  $ind = 0;
-  for ($x = 1; $x < $jumlah; $x++) {
-    if ($V[$x] > $maxam) {
-      $maxam = $V[$x];
-      $ind = $x;
-    }
-  }
-  ?>
+          $jumlah = count($V);
+          $maxam = $V[0];
+          $ind = 0;
+          for ($x = 1; $x < $jumlah; $x++) {
+            if ($V[$x] > $maxam) {
+              $maxam = $V[$x];
+              $ind = $x;
+            }
+          }
+          ?>
 
-  <div class="box box-info">
-    <div class="box-header with-border">
-      <h3 class="box-title">Kesimpulan</h3>
-      <div class="box-tools">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Kesimpulan</h3>
+              <div class="box-tools">
+              </div>
+            </div>
+            <div class="box-body">
+              <p>Dari hasil perhitungan ranking diatas, maka penilaian terbaik adalah <b>Jalan <?php echo $nama[$ind] ?></b> dengan nilai <b><?php echo round($maxam, 5) ?></b> </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="box-body">
-      <p>Dari hasil perhitungan ranking diatas, maka penilaian terbaik adalah <b>Jalan <?php echo $nama[$ind] ?></b> dengan nilai <b><?php echo round($maxam, 5) ?></b> </p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
 
-          <?php $this->load->view('template/footer'); ?>
+    <?php $this->load->view('template/footer'); ?>

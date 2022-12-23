@@ -7,10 +7,57 @@ class Topsis_model extends CI_Model
     $this->load->database();
   }
 
-  public function get_tabell()
+  public function get_tabel_topsis()
   {
-   
-    $sql="
+
+    $this->db->select('*')
+     ->from('topsis_alternatives')
+     ->join('topsis_evaluations', 'topsis_alternatives.id_alternative = topsis_evaluations.id_alternative', 'left')
+     ->join('topsis_criterias', 'topsis_evaluations.id_criteria=topsis_criterias.id_criteria', 'left');
+     $query = $this->db->get();
+     return $query->result_array();
+
+    // $this->db->join('topsis_alternatives', 'topsis_alternatives.id_alternative=topsis_evaluation.id_alternative', 'left');
+    // $this->db->join('topsis_criterias', 'topsis_criterias.id_criteria=topsis_evaluation.id_criteria', 'left');
+
+    // $query = $this->db->get('topsis_evaluations');
+    // return $query->result_array();
+  }
+
+  public function get_nama_crit()
+  {
+
+    $this->db->select('*')
+     ->from('topsis_criterias');
+     $query = $this->db->get();
+     return $query->result_array();
+
+    // $this->db->join('topsis_alternatives', 'topsis_alternatives.id_alternative=topsis_evaluation.id_alternative', 'left');
+    // $this->db->join('topsis_criterias', 'topsis_criterias.id_criteria=topsis_evaluation.id_criteria', 'left');
+
+    // $query = $this->db->get('topsis_evaluations');
+    // return $query->result_array();
+  }
+  public function get_nama_alt()
+  {
+
+    $this->db->select('*')
+     ->from('topsis_evaluations')
+     ->join('topsis_alternatives', 'topsis_alternatives.id_alternative = topsis_evaluations.id_alternative', 'left');
+     $query = $this->db->get();
+     return $query->result_array();
+
+    // $this->db->join('topsis_alternatives', 'topsis_alternatives.id_alternative=topsis_evaluation.id_alternative', 'left');
+    // $this->db->join('topsis_criterias', 'topsis_criterias.id_criteria=topsis_evaluation.id_criteria', 'left');
+
+    // $query = $this->db->get('topsis_evaluations');
+    // return $query->result_array();
+  }
+
+  public function get_tabell1()
+  {
+
+    $sql = "
     SELECT 
     b.name,c.criteria,a.value,c.weight,c.attribute
   FROM 
@@ -19,7 +66,7 @@ class Topsis_model extends CI_Model
       topsis_alternatives b USING(id_alternative)
     JOIN 
       topsis_criterias c USING(id_criteria)
-    ";    
+    ";
     $query = $this->db->query($sql);
     return $query;
 

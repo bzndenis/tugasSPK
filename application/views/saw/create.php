@@ -31,7 +31,7 @@
 
 <div class="box box-info">
   <div class="box-header with-border">
-    <h3 class="box-title">Tambah Data Alterbatif</h3>
+    <h3 class="box-title">Tambah Data Alternatif</h3>
   </div>
   <form class="form-horizontal" action="<?php echo site_url('saw/create'); ?>" method="post">
     <div class="box-body">

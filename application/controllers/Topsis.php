@@ -17,7 +17,7 @@ class Topsis extends CI_Controller
 
     public function index()
     {
-        $data['tabel'] = $this->topsis_model->get_tabell();
+        $data['tabel'] = $this->topsis_model->get_tabel_topsis();
 
         $this->load->view('topsis/topsis', $data);
     }    
@@ -38,7 +38,7 @@ class Topsis extends CI_Controller
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('saw/create');
         } else {
-            $this->saw_model->set_data();
+            $this->topsis_model->set_data();
             redirect('saw/data');
         }
         // $this->load->view('saw/footer');
@@ -46,19 +46,20 @@ class Topsis extends CI_Controller
 
     public function data()
     {
-        $data['tabel'] = $this->saw_model->get_tabell();
-        $data['bobot'] = $this->saw_model->get_bobot();
+        $data['tabel'] = $this->topsis_model->get_tabel_topsis();
+        $data['nama_crit'] = $this->topsis_model->get_nama_crit();
+        $data['nama_alt'] = $this->topsis_model->get_nama_alt();
 
         // $this->load->view('saw/header');
-        $this->load->view('saw/data', $data);
+        $this->load->view('topsis/data', $data);
         // $this->load->view('saw/footer');
     }
 
     public function saw_hasil()
     {
-        $data['tabel'] = $this->saw_model->get_tabell();
-        $data['bobot'] = $this->saw_model->get_bobot();
-        $data['hasil_saw'] = $this->saw_model->get_all()->result();
+        $data['tabel'] = $this->topsis_model->get_tabel_topsis();
+        $data['bobot'] = $this->topsis_model->get_bobot();
+        $data['hasil_saw'] = $this->topsis_model->get_all()->result();
 
         $this->load->view('saw/saw_hasil', $data);
 
@@ -78,10 +79,10 @@ class Topsis extends CI_Controller
         $this->form_validation->set_rules('kamera', 'kamera', 'required');
 
         if ($this->form_validation->run() === FALSE) {
-            $data['data_item'] = $this->saw_model->get_data_id($id);
+            $data['data_item'] = $this->topsis_model->get_data_id($id);
             $this->load->view('saw/update', $data);
         } else {
-            $this->saw_model->update_data($id);
+            $this->topsis_model->update_data($id);
             redirect('saw/data');
         }
     }
@@ -99,17 +100,17 @@ class Topsis extends CI_Controller
         $this->form_validation->set_rules('C5', 'C5', 'required');
 
         if ($this->form_validation->run() === FALSE) {
-            $data['data_bobot'] = $this->saw_model->get_bobot();
+            $data['data_bobot'] = $this->topsis_model->get_bobot();
             $this->load->view('saw/update_bobot', $data);
         } else {
-            $this->saw_model->update_data_bobot();
+            $this->topsis_model->update_data_bobot();
             redirect('saw/data');
         }
     }
 
     public function delete($id)
     {
-        $this->saw_model->delete_data($id);
+        $this->topsis_model->delete_data($id);
         redirect('saw/data');
     }
 
